@@ -532,6 +532,7 @@ rmtcfg		1236/tcp			# Gracilis Packeten remote config server
 xtel		1313/tcp			# french minitel
 support		1529/tcp	prmsd gnatsd	# GNATS, cygnus bug tracker
 cfinger		2003/tcp			# GNU Finger
+iprop		2121/tcp			# Heimdal
 ninstall	2150/tcp			# ninstall service
 ninstall	2150/udp			# ninstall service
 afbackup	2988/tcp			# Afbackup system
