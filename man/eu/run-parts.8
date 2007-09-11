@@ -1,0 +1,82 @@
+.\" Kaixo Emacs!  Honako hau -*- nroff -*- iturburu-fitxategia da.
+.\" Sorrera-direktorioak eta eskuliburuko orri honek Ian Jackson-en 1994 Copyright-a dute.
+.\" Eskuliburuko orri honetako aldaketek Jeff Noxon-en 1996 Copyright-a dute.
+.\" Besterik
+.\"
+.\" Software librea da; kopiatzeko baldintzak GNU Lizentzia Publiko Orokorraren
+.\" 2. bertsioan edo berriago batean ikusi.  Ez du INOLAKO bermerik.
+.TH RUN\-PARTS 8 "1996ko ekainak 5" "Debian Linux"
+.SH IZENA
+run\-parts \- direktorio bateko programak eta script-ak exekutatzen ditu
+.SH LABURPENA
+.B run\-parts
+[\-\-test] [\-\-verbose] [\-\-report] [\-\-umask=umask] [\-\-arg=argument] [\-\-help] [\-\-version] direktorioa
+.SH AZALPENA
+.PP
+.B run\-parts-ek
+.IR direktorio
+bakun batean aurkitutako programa edo script batzuk exekutatzen ditu.
+Fitxategi-izenek letra maiuskulak eta minuskulak,
+digituak, azpimarrak eta marratxoak baino ezin dituzte izan.  Bestelako izenak 
+dituzten .I direktorioko
+azpidirektorioei eta fitxategiei ezikusi egingo zaie isilpean.
+
+Script-ek 
+.B #!/bin/interpretername
+hitzarmena bete behar dute exekutatuak izango badira.  .B /bin/sh-ek
+ez ditu automatikoki
+exekutatuko.
+
+Aurkitutako fitxategiak fitxategi-izenen hurrenkera lexikalean exekutatuko dira.
+.SS AUKERAK
+.TP
+.B \-\-test
+exekutatuko diren script-en izenak inprimatzen ditu, baina ez ditu
+exekutatuko.
+.TP
+.B \-\-verbose
+script bakoitzaren izena errore estandarrean inprimatzen du exekutatu aurretik.
+.TP
+.B \-\-report
+.BR \-\-verbose-ren
+antzekoa da,
+baina irteera sortzen duten script-en izenak bakarrik inprimatzen ditu.  Script-a non agertzen den lehenago, irteera estandarrean edo errore estandarrean, hortxe inprimatuko da script-aren izen hori. 
+.B
+.TP
+.BI \-\-umask= umask
+umask
+.I umask-en
+ezartzen du script-ak exekutatu aurretik.
+.I umask
+zortzitarretan zehaztu behar da.  Lehenespen gisa, umask 022 izaten da.
+.TP
+.BI \-\-arg= argument
+.I argumentua
+script-etara
+pasatzen du.  .B --arg
+behin erabili
+pasatu nahi duzun argumentu bakoitzeko.
+.TP
+.B "\-\-"
+Aukeren amaiera dela zehazten du.  .B "\-\-"ren
+ondoko edozein fitxategi-izen
+ez da aukera moduan interpretatua izango, nahiz eta marratxo batez
+hasi.
+.TP
+.B \-\-help
+Erabiltzeko informazioa bistaratu eta irten egingo da.
+.TP
+.B \-\-version
+Bertsioa eta copyright-a bistaratu eta irten egingo da.
+
+.SH COPYRIGHTa
+Copyright (C) 1994 Ian Jackson.
+Copyright (C) 1996 Jeff Noxon.
+Copyright (C) 1996,1997,1998 Guy Maor
+
+.B run\-parts
+software librea da; kopiatzeko baldintzak GNU Lizentzia Publiko Orokorraren
+2. bertsioan edo berriago batean ikusi.  Ez du
+.I inolako
+bermerik.
+

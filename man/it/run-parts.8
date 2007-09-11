@@ -1,0 +1,82 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Build-from-directory and this manpage are Copyright 1994 by Ian Jackson.
+.\" Changes to this manpage are Copyright 1996 by Jeff Noxon.
+.\" More
+.\"
+.\" This is free software; see the GNU General Public Licence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.TH RUN\-PARTS 8 "5 giugno 1996" "Debian Linux"
+.SH NOME
+run\-parts \- esegue script o programmi in una directory
+.SH SINTASSI
+.B run\-parts
+[\-\-test] [\-\-verbose] [\-\-report] [\-\-umask=umask] [\-\-arg=argument] [\-\-help] [\-\-version] directory
+.SH DESCRIZIONE
+.PP
+.B run\-parts
+esegue un gruppo di script o programmi che si trova in una singola directory
+.IR directory .
+I nomi dei file devono contenere solo lettere maiuscole e minuscole,
+numeri, sottolineature e trattini.  Sottodirectory di
+.I directory
+e file con altri nomi saranno ignorati senza avvisare.
+
+Gli script devono seguire la convenzione 
+.B #!/bin/nomeinterprete
+per essere eseguiti.  Non saranno eseguiti automaticamente da
+.B /bin/sh.
+
+I file trovati saranno eseguiti nell'ordine lessicale dei nomi dei file.
+.SS OPZIONI
+.TP
+.B \-\-test
+stampa i nomi degli script che andrebbero in esecuzione, ma senza mandarli in esecuzione realmente.
+.TP
+.B \-\-verbose
+stampa il nome di ciascuno script sullo stderr prima di eseguirlo.
+.TP
+.B \-\-report
+simile a
+.BR \-\-verbose ,
+ma stampa solo il nome dello script che produce output.  Il nome dello script viene stampato su stdout o stderr a seconda su quale dei due per primo lo script produce output.
+.B
+.TP
+.BI \-\-umask= umask
+Imposta l'umask a
+.I umask
+prima di mandare in esecuzione gli script.
+.I umask
+dovrebbe essere specificata in ottale. L'umask è pre-impostata a 022.
+.TP
+.BI \-\-arg= argomento
+Passa
+.I argomento
+agli script.  Usa
+.B --arg
+una volta per ciascun argomento che vuoi passare.
+.TP
+.B "\-\-"
+Specifica che questa è la fine delle opzioni.  Qualsiasi nome di file dopo
+.B "\-\-"
+non sarà interpretato come opzione anche se comincia con un trattino.
+.TP
+.B \-\-help
+Visualizza informazioni sull'uso ed esce.
+.TP
+.B \-\-version
+Visualizza la versione e il copyright ed esce.
+
+.SH COPYRIGHT
+Copyright (C) 1994 Ian Jackson.
+Copyright (C) 1996 Jeff Noxon.
+Copyright (C) 1996,1997,1998 Guy Maor
+
+.B run\-parts
+è un software libero; vedi la versione 2 della GNU General Public Licence 
+(o una successiva) per le condizioni di redistribuzione. 
+.I Non
+ci sono garanzie.
+
+.SH TRADUTTORE
+Salvatore Di Petro
+salvuz@despammed.com

@@ -1,0 +1,15 @@
+2007-03-09 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.8
+
+	* drop exports file, it belong to nfs-utils
+
+2007-03-07 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.7
+
+	* drop anything related to update-passwd, as it is not used in the
+	  package
+
+2007-03-07 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.6
+
+	* remove ulimited-related directives from profile (cd bug #29157)
+	* remove deprecated /usr/X11R6/bin location from PATH in profile
+	* Makefiles cleanup
+	* switch to a manual Changelog

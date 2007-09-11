@@ -1,0 +1,7 @@
+ext2
+nodev proc
+nodev devpts
+iso9660
+reiserfs
+vfat
+hpfs

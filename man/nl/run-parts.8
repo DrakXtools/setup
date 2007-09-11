@@ -1,0 +1,83 @@
+.\" Hey, Emacs!  This is an -*- nroff -*- source file.
+.\" Build-from-directory and this manpage are Copyright 1994 by Ian Jackson.
+.\" Changes to this manpage are Copyright 1996 by Jeff Noxon.
+.\" More
+.\"
+.\" This is free software; see the GNU General Public Licence version 2
+.\" or later for copying conditions.  There is NO warranty.
+.TH RUN\-PARTS 8 "5 June 1996" "Debian Linux"
+.SH NAAM
+run\-parts \- voert scripts of programma's uit in een directory
+.SH SYNOPSIS
+.B run\-parts
+[\-\-test] [\-\-verbose] [\-\-report] [\-\-umask=umask] [\-\-arg=parameter] [\-\-help] [\-\-version] directory
+.SH BESCHRIJVING
+.PP
+.B run\-parts
+voert een aantal scripts of programma's uit die zich in één directory 
+.IR directory
+bevinden.
+Bestandsnamen mogen uitsluitend bestaan uit hoofdletters, kleine letters, cijfers,
+onderstrepingstekens (_) en liggende streepjes (-).  Subdirectory's van
+.I directory
+en bestanden met andere namen worden stilzwijgend genegeerd.
+
+Scripts moeten zich houden aan de conventie
+.B #!/bin/interpretername
+om uitgevoerd te kunnen worden.  Ze worden niet automatisch uitgevoerd door
+.B /bin/sh.
+
+De aangetroffen bestanden worden uitgevoerd in alfabetische volgorde van de bestandsnamen.
+.SS OPTIES
+.TP
+.B \-\-test
+Toont de namen van de scripts die uitgevoerd zouden worden, echter zonder ze daadwerkelijk
+uit te voeren.
+.TP
+.B \-\-verbose
+Stuurt de naam van ieder script naar stderr alvorens het uit te voeren.
+.TP
+.B \-\-report
+Vergelijkbaar met
+.BR \-\-verbose ,
+Toont echter alleen de namen van scripts die uitvoer produceren.  De naam van het script
+wordt weergegeven via stdout of stderr, afhankelijk van waar de eerste uitvoer van het
+script naartoe wordt gestuurd.
+.B
+.TP
+.BI \-\-umask= umask
+Stelt de umask in op
+.I umask
+alvorens de scripts uit te voeren.
+.I umask
+moet hierbij in octale notatie worden opgegeven.  Het umask is standaard ingesteld op 022.
+.TP
+.BI \-\-arg= parameter
+Geef
+.I parameter
+door aan de scripts.  Gebruik telkens één optie
+.B --arg
+per parameter die u wilt doorgeven.
+.TP
+.B "\-\-"
+Geeft het einde van de serie opties aan.  Tekst na 
+.B "\-\-"
+zal niet als optie worden geïnterpreteerd, ook niet wanneer deze begint met een 
+liggend streepje (-).
+.TP
+.B \-\-help
+Toont beknopte gebruiksinformatie.
+.TP
+.B \-\-version
+Toont versie- en copyright-informatie.
+
+.SH COPYRIGHT
+Copyright (C) 1994 Ian Jackson.
+Copyright (C) 1996 Jeff Noxon.
+Copyright (C) 1996,1997,1998 Guy Maor
+
+.B run\-parts
+is vrije software; zie de GNU General Public Licence versie 2 of
+later voor de kopieervoorwaarden.  Er worden 
+.I geen
+garanties gegeven.
