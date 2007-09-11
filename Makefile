@@ -8,7 +8,7 @@ LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 
 subdir = passgrp utils man
 
-FILES = $(subdir) $(LIST) Makefile ChangeLog
+FILES = $(subdir) $(LIST) Makefile NEWS
 
 all: 
 	@for dir in $(subdir);do \
