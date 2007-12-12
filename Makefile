@@ -1,9 +1,9 @@
 PACKAGE = setup
-VERSION = 2.7.9
+VERSION = 2.7.10
 SVNPATH = svn+ssh://svn.mandriva.com/svn/soft/$(PACKAGE)
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
-	motd printcap profile.d protocols securetty services shells profile \
+	motd printcap protocols securetty services shells profile \
 	filesystems fstab resolv.conf hosts
 
 subdir = passgrp utils man
