@@ -425,7 +425,7 @@ cfengine	5308/udp			# CFengine
 cvsup		5999/tcp	CVSup		# CVSup file transfer/John Polstra/FreeBSD
 cvsup		5999/udp	CVSup		# CVSup file transfer/John Polstra/FreeBSD
 x11		6000/tcp	X		# the X Window System
-sane		6566/tcp			# SANE Control Port
+sane-port	6566/tcp			# SANE Control Port
 afs3-fileserver	7000/tcp			# file server itself
 afs3-fileserver	7000/udp			# file server itself
 afs3-callback	7001/tcp			# callbacks to cache managers
