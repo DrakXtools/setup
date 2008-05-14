@@ -18,9 +18,9 @@ games::20:
 tape::21:
 cdrom::22:
 utmp::24:
-shadow::25
-chkpwd::26
-auth::27
+shadow::25:
+chkpwd::26:
+auth::27:
 usb::43:
 cdwriter::80:
 audio::81:
