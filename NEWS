@@ -1,3 +1,11 @@
+2008-05-14 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.12
+
+	* add shadow, chkpwd, and auth groups for TCB migration purpose
+
+2008-01-28 Marcelo Ricardo Leitner <mrl@mandriva.com> 2.7.11
+
+	* fix sane entry in /etc/services
+
 2007-12-12 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.10
 
 	* drop xhost profile scriptlets, they belong to xhost
