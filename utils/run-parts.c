@@ -115,7 +115,7 @@ void add_argument (char *newarg)
  */
 int valid_name (const struct dirent *d)
 {
-  char *c = d->d_name;
+  const char *c = d->d_name;
   int filenamelen;
   
   filenamelen=strlen(c);
