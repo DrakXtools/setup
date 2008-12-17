@@ -7,6 +7,9 @@
 # Show all if ambigious.
 set show-all-if-ambiguous on
 
+# Add / to symlink to directory
+set mark-symlinked-directories on
+
 # 8Bits supports.
 set meta-flag on
 set convert-meta off
