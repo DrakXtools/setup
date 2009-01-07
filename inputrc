@@ -87,5 +87,9 @@ $endif
 "\eOB":         next-history
 "\eOE":         re-read-init-file
 
+# on gnome-terminal (mdvbz#36287)
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
+
 # emacs mode
 $endif
