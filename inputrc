@@ -39,6 +39,8 @@ $if mode=emacs
 # those two are for rxvt
 "\e[7~":beginning-of-line
 "\e[8~":end-of-line
+"\eOc": forward-word
+"\eOd": backward-word
 
 # on some xterm
 "\e[H": beginning-of-line
