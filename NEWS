@@ -1,3 +1,14 @@
+2009-04-11 Gustavo De Nardin <gustavodn@mandriva.com> 2.7.17
+
+	* stop csh from sourcing /etc/profile.d/* on non-interactive shells
+	  (#49407 comment 6)
+
+2009-01-09 Frederic Crozat <fcrozat@mandriva.com> 2.7.16
+
+	* add dialout group (needed by latest udev, common with Debian)
+
+2009-01-07 Pixel <pixel@mandriva.com>
+
 	* handle control + left/right arrow in gnome-terminal (#36287)
 
 2008-05-14 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.12

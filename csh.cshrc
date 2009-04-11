@@ -17,6 +17,9 @@ if ($?prompt) then
   else
     set prompt=\[`id -nu`@`hostname -s`\]\$\ 
   endif
+else
+  # nothing more to do for non-interactive shell
+  goto OUT
 endif
 
 test -d /etc/profile.d
@@ -34,3 +37,6 @@ if ($status == 0) then
         end
         unset i nonomatch
 endif
+
+
+OUT:
