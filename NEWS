@@ -1,5 +1,6 @@
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
 
+	* inputrc: use history-search-backward/forward for pageup/pagedown
 	* /etc/inputrc: add support for ctrl+arrow shortcut in rxvt
 	* drop order hosts,bind from setup, no longer used by glibc
 	  (rhbz#703049)

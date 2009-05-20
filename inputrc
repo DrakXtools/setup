@@ -30,6 +30,8 @@ $if mode=emacs
 
 "[1~": beginning-of-line	# Home
 "[4~": end-of-line		# End
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
 
 # typing the beginning of a previous command then
 # PgUp/PgDw cycles trough history only for matching entries
