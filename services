@@ -547,8 +547,8 @@ postgres	5432/tcp			# POSTGRES
 postgres	5432/udp			# POSTGRES
 fax		4557/tcp			# FAX transmission service        (old)
 hylafax		4559/tcp			# HylaFAX client-server protocol  (new)
-xmmp		5222/tcp			# Jabber, plaintext
-xmmps		5223/tcp			# Jabber, SSL
+xmpp		5222/tcp			# Jabber, plaintext
+xmpps		5223/tcp			# Jabber, SSL
 xmpps2s		5269/tcp			# Jabber Server-to-Server
 sgi-dgl		5232/tcp			# SGI Distributed Graphics
 sgi-dgl		5232/udp
