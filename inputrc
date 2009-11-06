@@ -30,6 +30,9 @@ $if mode=emacs
 
 "[1~": beginning-of-line	# Home
 "[4~": end-of-line		# End
+# commented out keymappings for pgup/pgdown to reach begin/end of history
+#"\e[5~": beginning-of-history
+#"\e[6~": end-of-history
 "\e[5~": history-search-backward
 "\e[6~": history-search-forward
 
