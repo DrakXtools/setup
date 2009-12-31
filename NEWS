@@ -1,3 +1,7 @@
+2009-12-31 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.18
+
+	* update /etc/protocols and /etc/services from latest debian package
+
 2009-04-11 Gustavo De Nardin <gustavodn@mandriva.com> 2.7.17
 
 	* stop csh from sourcing /etc/profile.d/* on non-interactive shells
