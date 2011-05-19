@@ -1,5 +1,7 @@
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
 
+	* drop order hosts,bind from setup, no longer used by glibc
+	  (rhbz#703049)
 	* /etc/hosts: adjust aliases to make IPv6 work out of the box
 	* update /etc/filesystems with some additional filesystems with
 	  /proc/filesystems being read afterwards as well
