@@ -1,3 +1,8 @@
+2012-03-15 Guillaume Rousse <guillomovitch@gmail.com> 2.7.19
+
+	* update /etc/protocols and /etc/services from debian package
+	  netbase 4.47
+
 2009-12-31 Guillaume Rousse <guillomovitch@mandriva.org> 2.7.18
 
 	* update /etc/protocols and /etc/services from latest debian package
