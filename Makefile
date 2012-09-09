@@ -39,7 +39,7 @@ install:
 localdist: cleandist dir localcopy tar
 
 cleandist: clean
-	rm -rf $(PACKAGE)-$(VERSION) $(PACKAGE)-$(VERSION).tar.bz2
+	rm -rf $(PACKAGE)-$(VERSION) $(PACKAGE)-$(VERSION).tar.xz
 
 dir:
 	mkdir $(PACKAGE)-$(VERSION)
@@ -48,7 +48,7 @@ localcopy:
 	tar c --exclude=.svn $(FILES) | tar x -C $(PACKAGE)-$(VERSION)   
 
 tar:
-	tar cvjf $(PACKAGE)-$(VERSION).tar.bz2 $(PACKAGE)-$(VERSION)
+	tar cvJf $(PACKAGE)-$(VERSION).tar.xz $(PACKAGE)-$(VERSION)
 	rm -rf $(PACKAGE)-$(VERSION)
 
 # rules to build a public distribution
