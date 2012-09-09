@@ -31,7 +31,7 @@ install:
 		cp -avf $$i $(DESTDIR)/etc/$$i; \
 	done
 	chmod 0600 $(DESTDIR)/etc/securetty
-	echo -n '' > $(DESTDIR)/var/log/lastlog
+	touch $(DESTDIR)/var/log/lastlog
 
 # rules to build a local distribution
 
