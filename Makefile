@@ -1,5 +1,5 @@
 PACKAGE = setup
-VERSION = 2.7.19
+VERSION = 2.7.20
 SVNPATH = svn+ssh://svn.mandriva.com/svn/soft/$(PACKAGE)
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \

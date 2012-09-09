@@ -1,3 +1,7 @@
+2012-03-15 Kamil Rytarowski <n54@gmx.com> 2.7.20
+
+	* remove run-parts from this package, it's packaged separately
+
 2012-03-15 Guillaume Rousse <guillomovitch@gmail.com> 2.7.19
 
 	* update /etc/protocols and /etc/services from debian package
