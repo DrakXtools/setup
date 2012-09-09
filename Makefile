@@ -6,7 +6,7 @@ LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 	motd printcap protocols securetty services shells profile \
 	filesystems fstab resolv.conf hosts
 
-subdir = passgrp utils man
+subdir = passgrp
 
 FILES = $(subdir) $(LIST) Makefile NEWS
 
