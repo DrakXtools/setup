@@ -1,5 +1,5 @@
 PACKAGE = setup
-VERSION = 2.7.20
+VERSION = 2.7.21
 SVNPATH = svn+ssh://svn.mandriva.com/svn/soft/$(PACKAGE)
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
@@ -32,7 +32,6 @@ install:
 	done
 	chmod 0600 $(DESTDIR)/etc/securetty
 	echo -n '' > $(DESTDIR)/var/log/lastlog
-	echo -n '' > $(DESTDIR)/etc/mtab
 
 # rules to build a local distribution
 
