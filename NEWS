@@ -1,3 +1,7 @@
+2013-03-30 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.7.22
+
+	* sync mounts in /etc/fstab to be consistent with systemd's
+
 2012-09-09 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.7.21
 
 	* don't create /etc/mtab
