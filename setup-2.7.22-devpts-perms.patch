@@ -1,0 +1,9 @@
+--- setup-2.7.22/fstab.omv~	2013-10-13 00:45:02.638676368 +0200
++++ setup-2.7.22/fstab	2013-10-13 00:46:25.709672894 +0200
+@@ -1,5 +1,5 @@
+ devtmpfs	/dev			devtmpfs	defaults	0 0
+-devpts		/dev/pts		devpts		defaults,noauto	0 0
++devpts		/dev/pts		devpts		defaults,noauto,gid=5,mode=620	0 0
+ tmpfs		/dev/shm		tmpfs		defaults,noauto	0 0
+ proc		/proc			proc		defaults	0 0
+ tmpfs		/run			tmpfs		defaults	0 0
