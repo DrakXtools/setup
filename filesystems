@@ -1,7 +1,15 @@
 ext2
+ext4
+ext3
+btrfs
+jfs
+xfs
 nodev proc
 nodev devpts
 iso9660
 reiserfs
+reiser4
 vfat
+hfs
 hpfs
+*
