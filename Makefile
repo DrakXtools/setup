@@ -6,14 +6,9 @@ LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 	motd printcap protocols securetty services shells profile \
 	filesystems fstab resolv.conf hosts
 
-subdir = passgrp
-
-FILES = $(subdir) $(LIST) Makefile NEWS
+FILES = $(LIST) Makefile NEWS
 
 all: 
-	@for dir in $(subdir);do \
-		make -C $$dir all ;\
-	done
 
 clean:
 	@for dir in $(subdir);do \
@@ -32,6 +27,8 @@ install:
 	done
 	chmod 0600 $(DESTDIR)/etc/securetty
 	touch $(DESTDIR)/var/log/lastlog
+	install -m644 group -D $(DESTDIR)/etc/group
+	install -m644 passwd -D $(DESTDIR)/etc/passwd
 
 # rules to build a public distribution
 
