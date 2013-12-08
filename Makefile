@@ -1,6 +1,6 @@
 PACKAGE = setup
 VERSION = 2.8.0
-SVNPATH = svn+ssh://svn.mandriva.com/svn/soft/$(PACKAGE)
+SVNPATH = git@abf.rosalinux.ru:moondrake/setup.git
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 	motd printcap protocols securetty services shells profile \
@@ -33,26 +33,10 @@ install:
 	chmod 0600 $(DESTDIR)/etc/securetty
 	touch $(DESTDIR)/var/log/lastlog
 
-# rules to build a local distribution
-
-localdist: cleandist dir localcopy tar
-
-cleandist: clean
-	rm -rf $(PACKAGE)-$(VERSION) $(PACKAGE)-$(VERSION).tar.xz
-
-dir:
-	mkdir $(PACKAGE)-$(VERSION)
-
-localcopy:
-	tar c --exclude=.svn $(FILES) | tar x -C $(PACKAGE)-$(VERSION)   
-
-tar:
-	tar cvJf $(PACKAGE)-$(VERSION).tar.xz $(PACKAGE)-$(VERSION)
-	rm -rf $(PACKAGE)-$(VERSION)
-
 # rules to build a public distribution
 
-dist: cleandist dir localcopy tar svntag
+dist: 
+	git archive --prefix=$(PACKAGE)-$(VERSION)/ | xz -vf > $(PRODUCT)-$(VERSION).tar.xz
 
-svntag:
-	svn cp -m 'version $(VERSION)' $(SVNPATH)/trunk $(SVNPATH)/tags/v$(VERSION)
+gittag:
+	git tag 'v$(VERSION)'
