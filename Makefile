@@ -28,7 +28,10 @@ install:
 	chmod 0600 $(DESTDIR)/etc/securetty
 	touch $(DESTDIR)/var/log/lastlog
 	install -m644 group -D $(DESTDIR)/etc/group
+	sed -e 's/:[0-9]\+:/::/g' group > $(DESTDIR)/etc/gshadow
 	install -m644 passwd -D $(DESTDIR)/etc/passwd
+	sed -e "s/:.*/:*:`expr $(shell date +%s) / 86400`:0:99999:7:::/" passwd > $(DESTDIR)/etc/shadow
+	sed -i -e 's/^\([^:]\+\):[^:]*:/\1:x:/' $(DESTDIR)/etc/{passwd,group}
 
 # rules to build a public distribution
 
