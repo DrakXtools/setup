@@ -1,5 +1,6 @@
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
 
+	* create utempter group by default
 	* fix devpts permissions (bero)
 	* create group lock by default (bero)
 
