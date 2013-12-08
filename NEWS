@@ -1,5 +1,6 @@
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
 
+	* services: sync with latest IANA
 	* securetty: sync with fedora
 	* protocols: update to latest IANA
 	* inputrc: use history-search-backward/forward for pageup/pagedown
