@@ -35,8 +35,10 @@ install:
 
 # rules to build a public distribution
 
-dist: 
-	git archive --prefix=$(PACKAGE)-$(VERSION)/ | xz -vf > $(PRODUCT)-$(VERSION).tar.xz
+dist: tar gittag
+
+tar:
+	git archive --format=tar --prefix=$(PACKAGE)-$(VERSION)/ HEAD | xz -vf > $(PACKAGE)-$(VERSION).tar.xz
 
 gittag:
 	git tag 'v$(VERSION)'
