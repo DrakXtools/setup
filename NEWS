@@ -1,4 +1,4 @@
-2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
+2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.0
 
 	* shells: add /sbin/nologin
 	* services: sync with latest IANA
