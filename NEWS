@@ -1,3 +1,8 @@
+2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.7.23
+
+	* fix devpts permissions (bero)
+	* create group lock by default (bero)
+
 2013-03-30 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.7.22
 
 	* sync mounts in /etc/fstab to be consistent with systemd's
