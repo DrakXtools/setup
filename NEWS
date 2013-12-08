@@ -1,5 +1,7 @@
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.0
 
+	* do passwd, group & shadow conversion in 'make install' rather than in
+	  scriptlet
 	* shells: add /sbin/nologin
 	* services: sync with latest IANA
 	* securetty: sync with fedora
