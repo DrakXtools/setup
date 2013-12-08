@@ -11,15 +11,9 @@ FILES = $(LIST) Makefile NEWS
 all: 
 
 clean:
-	@for dir in $(subdir);do \
-		make -C $$dir clean ;\
-	done
 	rm -f *~ \#*\#
 
 install:
-	@for dir in $(subdir); do \
-		make -C $$dir install DESTDIR=$(DESTDIR);\
-	done
 	install -d -m 755 $(DESTDIR)/etc/
 	install -d -m 755 $(DESTDIR)/var/log/
 	for i in $(LIST); do \
