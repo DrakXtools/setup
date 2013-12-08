@@ -7,14 +7,15 @@
 # Show all if ambigious.
 set show-all-if-ambiguous on
 
-# Add / to symlink to directory
-set mark-symlinked-directories on
-
 # 8Bits supports.
 set meta-flag on
-set convert-meta off
 set input-meta on
+set convert-meta off
 set output-meta on
+
+# Completed names which are symbolic links to
+# directories have a slash appended.
+set mark-symlinked-directories on
 
 # bash completions does not use more
 set page-completions off
