@@ -1,5 +1,5 @@
 devtmpfs	/dev			devtmpfs	defaults	0 0
-devpts		/dev/pts		devpts		defaults,noauto	0 0
+devpts		/dev/pts		devpts		defaults,noauto,gid=5,mode=620	0 0
 tmpfs		/dev/shm		tmpfs		defaults,noauto	0 0
 proc		/proc			proc		defaults	0 0
 tmpfs		/run			tmpfs		defaults	0 0

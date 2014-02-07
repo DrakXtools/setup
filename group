@@ -23,6 +23,7 @@ chkpwd::26:
 auth::27:
 utempter::35:
 usb::43:
+lock::54:
 cdwriter::80:
 audio::81:
 video::82:
