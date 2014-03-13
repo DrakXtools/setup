@@ -1,5 +1,6 @@
 2014-03-13 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.1
 
+	* set login shell to /sbin/nologin for system users
 	* create group messagebus by default
 
 2013-12-08 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.0
