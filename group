@@ -21,6 +21,7 @@ utmp::24:
 shadow::25:
 chkpwd::26:
 auth::27:
+messagebus::28:
 utempter::35:
 usb::43:
 lock::54:
