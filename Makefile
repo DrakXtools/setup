@@ -1,6 +1,6 @@
 PACKAGE = setup
-VERSION = 2.8.0
-SVNPATH = git@abf.rosalinux.ru:moondrake/setup.git
+VERSION = 2.8.1
+SVNPATH = git@abf.rosalinux.ru:mdksoft/setup.git
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 	motd printcap protocols securetty services shells profile \
