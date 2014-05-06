@@ -29,5 +29,7 @@ cdwriter::80:
 audio::81:
 video::82:
 dialout::83:
+systemd-journal::84:
+systemd-journal-gateway::85:
 users::100:
 nogroup::65534:

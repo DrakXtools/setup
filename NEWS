@@ -1,3 +1,8 @@
+2014-05-06 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.2
+
+	* create user systemd-journal-gateway & groups systemd-journal-gateway
+	  by default
+
 2014-03-13 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.1
 
 	* set login shell to /sbin/nologin for system users
