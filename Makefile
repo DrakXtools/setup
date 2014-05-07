@@ -1,6 +1,6 @@
 PACKAGE = setup
 VERSION = 2.8.1
-SVNPATH = git@abf.rosalinux.ru:mdksoft/setup.git
+GITPATH = git@abf.rosalinux.ru:software/setup.git
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
 	motd printcap protocols securetty services shells profile \
