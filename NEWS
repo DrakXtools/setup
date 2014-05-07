@@ -1,5 +1,6 @@
 2014-05-06 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.2
 
+	* create /etc/profile.d
 	* create user systemd-journal-gateway & groups systemd-journal-gateway
 	  by default
 

@@ -15,6 +15,7 @@ clean:
 
 install:
 	install -d -m 755 $(DESTDIR)/etc/
+	install -d -m 755 $(DESTDIR)/etc/profile.d
 	install -d -m 755 $(DESTDIR)/var/log/
 	for i in $(LIST); do \
 		cp -avf $$i $(DESTDIR)/etc/$$i; \
