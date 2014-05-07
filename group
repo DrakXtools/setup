@@ -22,6 +22,7 @@ shadow::25:
 chkpwd::26:
 auth::27:
 messagebus::28:
+nscd::29:
 utempter::35:
 usb::43:
 lock::54:
