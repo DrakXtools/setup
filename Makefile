@@ -1,5 +1,5 @@
 PACKAGE = setup
-VERSION = 2.8.2
+VERSION = 2.8.3
 GITPATH = git@abf.rosalinux.ru:software/setup.git
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
