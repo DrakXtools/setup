@@ -1,3 +1,4 @@
+	* add default 'messagebus' user
 	* change gid of 'screen' to 84
 
 2014-05-22 Per Øyvind Karlsen <proyvind@moondrake.org> 2.8.4
