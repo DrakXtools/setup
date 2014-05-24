@@ -30,7 +30,7 @@ cdwriter::80:
 audio::81:
 video::82:
 dialout::83:
-screen::86:
+screen::84:
 users::100:
 systemd-journal::190:
 systemd-journal-gateway::191:
