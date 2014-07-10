@@ -25,6 +25,7 @@ messagebus::28:
 nscd::29:
 utempter::35:
 usb::43:
+ftp::50:
 lock::54:
 cdwriter::80:
 audio::81:
