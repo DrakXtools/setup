@@ -1,3 +1,5 @@
+	* add default group 'lusers' with gid 1000 to avoid warnings from
+	  adduser when first adding
 	* add opendns & google public dns servers as default for /etc/resolv.conf
 	  (making chroots less of a hazzle at least;)
 
