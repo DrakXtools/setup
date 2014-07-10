@@ -1,3 +1,6 @@
+	* add opendns & google public dns servers as default for /etc/resolv.conf
+	  (making chroots less of a hazzle at least;)
+
 2014-05-25 Per Øyvind Karlsen  <proyvind@moondrake.org> 2.8.5
 
 	* add default 'messagebus' user
