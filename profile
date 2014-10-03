@@ -3,8 +3,13 @@
 
 loginsh=1
 
-if [ "$UID" -ge 500 ] && ! echo ${PATH} |grep -q /usr/games ; then
-    PATH=$PATH:/usr/games
+if [ "$UID" -ge 500 ] ; then
+    if ! echo ${PATH} |grep -q /usr/local/games ; then
+        PATH=$PATH:/usr/local/games
+    fi
+    if ! echo ${PATH} |grep -q /usr/games ; then
+        PATH=$PATH:/usr/games
+    fi
 fi
 
 umask 022
