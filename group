@@ -34,7 +34,6 @@ dialout::83:
 screen::84:
 users::100:
 systemd-journal::190:
-systemd-journalgateway::191:
-systemd-journalremote::192:
+systemd-journal-gateway::191:
 lusers::1000:
 nogroup::65534:
