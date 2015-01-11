@@ -33,7 +33,6 @@ video::82:
 dialout::83:
 screen::84:
 users::100:
-messagebus::101:
 systemd-journal::102:
 systemd-network::103:
 systemd-timesync::104:
