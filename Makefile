@@ -3,7 +3,7 @@ VERSION = 2.8.6
 GITPATH = git@abf.rosalinux.ru:software/setup.git
 
 LIST =  csh.cshrc csh.login host.conf hosts.allow hosts.deny inputrc \
-	motd printcap protocols securetty services shells profile \
+	motd printcap protocols services shells profile \
 	filesystems fstab resolv.conf hosts
 
 FILES = $(LIST) Makefile NEWS
@@ -20,7 +20,6 @@ install:
 	for i in $(LIST); do \
 		cp -avf $$i $(DESTDIR)/etc/$$i; \
 	done
-	chmod 0600 $(DESTDIR)/etc/securetty
 	touch $(DESTDIR)/var/log/lastlog
 	install -m644 group -D $(DESTDIR)/etc/group
 	sed -e 's/:[0-9]\+:/::/g' group > $(DESTDIR)/etc/gshadow
