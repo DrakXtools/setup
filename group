@@ -33,7 +33,15 @@ video::82:
 dialout::83:
 screen::84:
 users::100:
-systemd-journal::190:
-systemd-journal-gateway::191:
+messagebus::101:
+systemd-journal::102:
+systemd-network::103:
+systemd-timesync::104:
+systemd-resolve::105:
+systemd-bus-proxy::106:
+systemd-journal-gateway::107:
+systemd-journal-remote::108:
+systemd-journal-upload::109:
+input::107:
 lusers::1000:
 nogroup::65534:
