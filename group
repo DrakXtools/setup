@@ -23,6 +23,7 @@ chkpwd::26:
 auth::27:
 messagebus::28:
 nscd::29:
+scanner::30:
 utempter::35:
 usb::43:
 ftp::50:
