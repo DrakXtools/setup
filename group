@@ -42,6 +42,7 @@ systemd-bus-proxy::106:
 systemd-journal-gateway::107:
 systemd-journal-remote::108:
 systemd-journal-upload::109:
-input::107:
+input::110:
+scanner::111:
 lusers::1000:
 nogroup::65534:
