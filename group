@@ -44,5 +44,6 @@ systemd-journal-remote::108:
 systemd-journal-upload::109:
 input::110:
 scanner::111:
+nobody::999:
 lusers::1000:
 nogroup::65534:
