@@ -10,6 +10,14 @@ FILES = $(LIST) Makefile NEWS
 
 all: 
 
+
+check:
+	@echo Sanity checking selected files....
+	bash -n profile
+	tcsh -f csh.cshrc
+	tcsh -f csh.login
+	./serviceslint ./services
+
 clean:
 	rm -f *~ \#*\#
 
