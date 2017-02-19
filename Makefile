@@ -13,7 +13,7 @@ all:
 
 check:
 	@echo Sanity checking selected files....
-	bash -n profile
+	sh -n profile
 	tcsh -f csh.cshrc
 	tcsh -f csh.login
 	./serviceslint ./services
